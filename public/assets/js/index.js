@@ -31,38 +31,7 @@ const hide = (elem) => {
 };
 
 // activeNote is used to keep track of the note in the textarea
-// let activeNote = {
-  document.addEventListener('DOMContentLoaded', () => {
-    const textarea = document.getElementById('noteTextarea');
-    const noteDisplay = document.getElementById('noteDisplay');
-  
-    // Function to save the note
-    const saveNote = (note) => {
-      // You can use localStorage or sessionStorage to persist the note
-      localStorage.setItem('savedNote', savedNote);
-      //noteDisplay.textContent = note; // Display the note
-    };
-
-  
-  
-    // Event listener to handle input in the textarea
-    textarea.addEventListener('input', (event) => {
-      const note = event.target.value;
-      saveNote(note);
-    });
-  
-    // Load the saved note on page load
-    const loadSavedNote = () => {
-      const savedNote = localStorage.getItem('savedNote');
-      if (savedNote) {
-       noteTitle.value = saveNote.title || '';
-       noteText.value = savedNote.text || '';
-      }
-    };
-  
-    loadSavedNote(); // Call the function to load the note on page load
-  });
-  
+ let activeNote = {};
 
 const getNotes = () =>
   fetch('/api/notes', {
@@ -166,11 +135,11 @@ const handleRenderBtns = () => {
 // Render the list of note titles
 const renderNoteList = async (notes) => {
   let jsonNotes = await notes.json();
- noteList.innerHTML = '';
+//  noteList.innerHTML = '';
  
-  // if (window.location.pathname === '/notes') {
-  //   noteList.forEach((el) => (el.innerHTML = ''));
-  // }
+  if (window.location.pathname === '/notes') {
+    noteList.forEach((el) => (el.innerHTML = ''));
+  }
 
   let noteListItems = [];
 
