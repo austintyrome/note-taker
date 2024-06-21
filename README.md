@@ -38,3 +38,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 This repository is under the MIT licesne.
 ```
+## GitHub Link
+```
+https://github.com/austintyrome/note-taker
+```
