@@ -1,7 +1,9 @@
-# Week-11-challenge
+# Note-taker
 
-## note-taker
-
+## Use
+```
+Sometimes you need to take notes but carrying a notebook can be a hassle. That is why using a digital note taker can make your life easier.
+```
 ## User Story
 
 ```
