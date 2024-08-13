@@ -6,6 +6,7 @@ const api = require('./routes/index.js');
 const app = express();
 
 app.use(clog);
+//Parse json files in the middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
