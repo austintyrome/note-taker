@@ -11,16 +11,20 @@ notes.get('/', (req, res) => {
 })
 notes.post('/', (req, res) => {
     console.log('attempting POST request')
+//make sure the request is good
     if (!req.body || !req.body.title || !req.body.text) {
         console.log('Title and text are required in the request body. POST request FAILED');
         return res.status(400).json({ error: 'Title and text are required in the request body. POST request FAILED' });
     }
+//desctructure the request
     const { title, text } = req.body;
+//add unique ID
     const newNote = {
         title,
         text,
         note_id: uuidv4(),
     };
+//append to db.json for get requests
     readAndAppend(newNote, './db/db.json');
     res.json(`Note added successfully, note_id: ${newNote.note_id}`);
 });
