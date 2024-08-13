@@ -8,6 +8,10 @@ Sometimes you need to take notes but carrying a notebook can be a hassle. That i
 
 https://github.com/austintyrome/note-taker
 
+## Live Site
+
+https://note-taker-ler1.onrender.com
+
 ## User Story
 
 ```
