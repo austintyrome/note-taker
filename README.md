@@ -4,6 +4,10 @@
 ```
 Sometimes you need to take notes but carrying a notebook can be a hassle. That is why using a digital note taker can make your life easier.
 ```
+## Repo
+
+https://github.com/austintyrome/note-taker
+
 ## User Story
 
 ```
